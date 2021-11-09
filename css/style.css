@@ -23,134 +23,8 @@
   position: absolute;
 }
 
-@media (min-width: 1201px) {
-  body {
-  font-size: 16px;
-  }
-
-  .topic {
-  background-image: url('../img/banner-bg.jpg');
-  }
-
-  .trend {
-    max-width: 1660px;
-    min-width: 1201px;
-  }
-
-  .trend-post {
-    width: 24.75%;
-  }
-
-  .trend-post:nth-child(4n-3) {
-    margin-right: 0.33%;
-  }
-
-  .trend-post:nth-child(4n-1) {
-    margin-right: 0.33%;
-    margin-left: 0.33%;
-  }
-
-  .content {
-    width: 1200px;
-  }
-
-  .posts {
-    width: 778px;
-  }
-
-  .post-info {
-    margin-left: 30px;
-  }
-
-  .info {
-    width: 270px;
-    margin-left: 122px;
-  }
-
-  .shop {
-    width: 1200px;
-    padding: 0 15px;
-  }
-
-  .shop-item {
-    width: 345px;
-  }
-
-}
-
-@media (min-width: 641px) and (max-width: 1200px) {
-  body {
-  font-size: 12px;
-  }
-
-  .topic {
-  background-image: url('../img/banner-bg-tablet.jpg');
-  }
-
-  .trend {
-
-}
-
-.trend {
-  min-width: 768px;
-}
-
-  .trend-post {
-    width: 49.5%;
-  }
-
-  .trend-post:nth-child(odd) {
-    margin-right: 0.5%;
-  }
-
-  .trend-post:nth-child(n+3) {
-    margin-top: 0.5%;
-  }
-
-  .content {
-    width: 697px;
-  }
-
-  .posts {
-    width: 392px;
-  }
-
-  .post-info {
-    margin-top: 15px;
-    margin-left: 0;
-  }
-
-  .info {
-    width: 270px;
-    margin-left: 35px;
-  }
-
-  .shop {
-    width: 697px;
-  }
-
-
-  .shop-item {
-    width: 337px;
-  }
-
-  .shop-item:nth-child(n+3) {
-    margin-top: 27px;
-  }
-
-}
-
-@media (max-width: 640px) {
-  body {
-  font-size: 10px;
-  }
-  .topic {
-  background-image: url('../img/banner-mobile.jpg');
-}
-}
-
 .topic {
-  padding-bottom: 4.16em;
+  text-transform: uppercase;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -172,23 +46,27 @@
 }
 
 .topic-container {
-  text-transform: uppercase;
-  width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding: 25px 0 0 15px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
-.topic-logo {
-  width: 179px;
+.topic-head {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.topic-title {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu {
-  padding-top: 15px;
+  padding-top: 10px;
 }
 
 .menu-list {
@@ -218,19 +96,16 @@
 
 .topic-title {
   text-transform: uppercase;
-  font-size: 45px;
   font-family: OpenSans-Bold;
-  line-height: 75px;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 105px;
+  padding-top: 100px;
   text-align: center;
   color: #ffffff;
 }
 
 .trend {
-  padding-top: 65px;
+  max-width: 1660px;
+  min-width: 1201px;
+  padding-top: 67px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -285,10 +160,7 @@
 }
 
 .content {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 47px;
-  margin-bottom: 45px;
+  margin: 48px auto;
   padding: 10px 15px;
   display: flex;
   flex-direction: row;
@@ -425,14 +297,14 @@ p {
   height: 3px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
+  margin-top: 14px;
 }
 
 .list-posts {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 27px;
+  padding-top: 26px;
 }
 
 .list-post {
@@ -442,7 +314,7 @@ p {
 }
 
 .list-post:nth-child(n+2) {
-  margin-top: 18px;
+  margin-top: 19px;
 }
 
 .list-post-preview {
@@ -466,7 +338,6 @@ p {
   color: #888888;
   font-family: OpenSans-Normal;
   font-size: 12px;
-  line-height: 12px;
 }
 
 .list-post-title {
@@ -489,7 +360,7 @@ h3 {
 .finder {
   display: flex;
   flex-direction: row;
-  margin-top: 60px;
+  margin-top: 57px;
   margin-bottom: 60px;
 }
 
@@ -582,7 +453,7 @@ h3 {
   width: 100%;
   margin-left: auto;
 	margin-right: auto;
-  margin-top: 20px;
+  margin-top: 22px;
   list-style: none;
   display: flex;
 	flex-wrap: wrap;
@@ -764,3 +635,148 @@ h3 {
   color: #999999;
   text-decoration: none;
 }
+
+/* -----------------DESKTOP------------------------ */
+@media (min-width: 1201px) {
+  .topic {
+    background-image: url('../img/banner-bg.jpg');
+  }
+
+  .topic-container {
+    max-width: 1200px;
+    padding: 30px 15px 0 15px;
+  }
+
+  .topic-logo {
+    width: 179px;
+  }
+
+  .topic-title {
+    font-size: 45px;
+    line-height: 75px;
+    width: 700px;
+    padding-bottom: 123px;
+  }
+
+  .trend {
+    max-width: 1660px;
+    min-width: 1201px;
+    padding-top: 67px;
+  }
+
+  .trend-post {
+    width: 24.75%;
+  }
+
+  .trend-post:nth-child(4n-3) {
+    margin-right: 0.33%;
+  }
+
+  .trend-post:nth-child(4n-1) {
+    margin-right: 0.33%;
+    margin-left: 0.33%;
+  }
+
+  .content {
+    width: 1200px;
+  }
+
+  .posts {
+    width: 778px;
+  }
+
+  .post-info {
+    margin-left: 30px;
+  }
+
+  .info {
+    width: 270px;
+    margin-left: 122px;
+  }
+
+  .shop {
+    width: 1200px;
+    padding: 0 15px;
+  }
+
+  .shop-item {
+    width: 345px;
+  }
+
+}
+/* -----------------TABLET------------------------ */
+@media (min-width: 641px) and (max-width: 1200px) {
+  .topic {
+  background-image: url('../img/banner-bg-tablet.jpg');
+  padding-bottom: 125px;
+  }
+
+  .topic-logo {
+    width: 158px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .topic-title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .trend {
+    min-width: 641px;
+    max-width: 1200px;
+  }
+
+  .trend-post {
+    width: 49.5%;
+  }
+
+  .trend-post:nth-child(odd) {
+    margin-right: 1%;
+  }
+
+  .trend-post:nth-child(n+3) {
+    margin-top: 1%;
+  }
+
+  .content {
+    width: 697px;
+  }
+
+  .posts {
+    width: 392px;
+  }
+
+  .post-info {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .info {
+    width: 270px;
+    margin-left: 35px;
+  }
+
+  .shop {
+    width: 697px;
+  }
+
+
+  .shop-item {
+    width: 337px;
+  }
+
+  .shop-item:nth-child(n+3) {
+    margin-top: 27px;
+  }
+
+}
+/* -----------------MOBILE------------------------ */
+@media (max-width: 640px) {
+  .topic {
+  background-image: url('../img/banner-mobile.jpg');
+}
+}
+/* ----------------------------------------- */
