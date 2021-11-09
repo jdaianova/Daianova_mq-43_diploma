@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: OpenSans-Normal;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff);
+  src: url(../fonts/OpenSans-Regular.woff);
   font-style: normal;
 }
 
 @font-face {
   font-family: OpenSans-Bold;
-  src: url(https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff);
+  src: url(../fonts/OpenSans-Bold.woff);
   font-style: bold;
 }
 
@@ -23,10 +23,112 @@
   position: absolute;
 }
 
+@media (min-width: 1201px) {
+  body {
+  font-size: 16px;
+  }
+
+  .topic {
+  background-image: url('../img/banner-bg.jpg');
+  }
+
+  .trend {
+    max-width: 1660px;
+    min-width: 1201px;
+  }
+
+  .trend-post {
+    width: 24.75%;
+  }
+
+  .trend-post:nth-child(4n-3) {
+    margin-right: 0.33%;
+  }
+
+  .trend-post:nth-child(4n-1) {
+    margin-right: 0.33%;
+    margin-left: 0.33%;
+  }
+
+  .content {
+    width: 1200px;
+  }
+
+  .posts {
+    width: 778px;
+  }
+
+  .post-info {
+    margin-left: 30px;
+  }
+
+  .info {
+    width: 270px;
+    margin-left: 122px;
+  }
+
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
+  body {
+  font-size: 12px;
+  }
+
+  .topic {
+  background-image: url('../img/banner-bg-tablet.jpg');
+  }
+
+  .trend {
+
+}
+
+.trend {
+  min-width: 768px;
+}
+
+  .trend-post {
+    width: 49.5%;
+  }
+
+  .trend-post:nth-child(odd) {
+    margin-right: 0.5%;
+  }
+
+  .trend-post:nth-child(n+3) {
+    margin-top: 0.5%;
+  }
+
+  .content {
+    width: 697px;
+  }
+
+  .posts {
+    width: 392px;
+  }
+
+  .post-info {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .info {
+    width: 270px;
+    margin-left: 35px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  body {
+  font-size: 10px;
+  }
+  .topic {
+  background-image: url('../img/banner-mobile.jpg');
+}
+}
+
 .topic {
-  min-width: 1200px;
-  padding-bottom: 125px;
-  background-image: url('https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg');
+  padding-bottom: 4.16em;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -52,7 +154,7 @@
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 25px;
+  padding: 25px 0 0 15px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -64,7 +166,7 @@
 }
 
 .menu {
-  margin-top: 15px;
+  padding-top: 15px;
 }
 
 .menu-list {
@@ -106,7 +208,6 @@
 }
 
 .trend {
-  width: 1660px;
   padding-top: 65px;
   margin-left: auto;
   margin-right: auto;
@@ -126,18 +227,8 @@
 }
 
 .trend-post {
-  width: 24.75%;
   position: relative;
   color: #ffffff;
-}
-
-.trend-post:nth-child(4n-3) {
-  margin-right: 0.33%;
-}
-
-.trend-post:nth-child(4n-1) {
-  margin-right: 0.33%;
-  margin-left: 0.33%;
 }
 
 .trend-post:after {
@@ -172,7 +263,6 @@
 }
 
 .content {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 47px;
@@ -182,13 +272,10 @@
   flex-direction: row;
 }
 
-.posts {
-  width: 778px;
-}
-
 .post {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 p {
@@ -213,7 +300,6 @@ p {
 
 .post-info {
   width: 367px;
-  margin-left: 30px;
 }
 
 .menu-location {
@@ -293,11 +379,6 @@ p {
 .post-content {
   margin-top: 35px;
   text-decoration: none;
-}
-
-.info {
-  width: 270px;
-  margin-left: 122px;
 }
 
 .list {

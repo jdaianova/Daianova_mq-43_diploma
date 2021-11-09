@@ -10,7 +10,7 @@
 <body>
 <header class="topic">
   <div class="topic-container">
-        <a class="topic-logo" href="#0" h><img src="https://netology-code.github.io/html-2-diploma/sources/images/noemi-logo.svg" alt="логотип"></a>
+        <a class="topic-logo" href="#0" h><img src="svg/noemi-logo.svg" alt="логотип"></a>
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-list-item">
@@ -148,7 +148,7 @@
       <div class="post-preview">
         <a href="#0">
            <img class="post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/last-post1.jpg"
+                src="img/last-post1.jpg"
                 alt="пляж">
         </a>
       </div>
@@ -180,7 +180,7 @@
       <div class="post-preview">
         <a href="#0">
            <img class="post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/last-post2.jpg"
+                src="img/last-post2.jpg"
                 alt="девушка занимается йогой">
         </a>
       </div>
@@ -213,7 +213,7 @@
       <div class="post-preview">
         <a href="#0">
            <img class="post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/last-post3.jpg"
+                src="img/last-post3.jpg"
                 alt="девушка на музыкальном фестивале">
         </a>
       </div>
@@ -244,7 +244,7 @@
       <div class="post-preview">
         <a href="#0">
            <img class="post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/last-post4.jpg"
+                src="img/last-post4.jpg"
                 alt="накрытый стол">
         </a>
       </div>
@@ -277,7 +277,7 @@
       <div class="post-preview">
         <a href="#0">
            <img class="post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/last-post5.jpg"
+                src="img/last-post5.jpg"
                 alt="подушка на кресле">
         </a>
       </div>
@@ -318,7 +318,7 @@
       <div class="list-post-preview">
         <a href="#0">
            <img class="list-post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/2.jpg"
+                src="img/2.jpg"
                 alt="пляж">
         </a>
       </div>
@@ -333,7 +333,7 @@
       <div class="list-post-preview">
         <a href="#0">
            <img class="list-post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/151.jpg"
+                src="img/151.jpg"
                 alt="йога">
         </a>
       </div>
@@ -348,7 +348,7 @@
       <div class="list-post-preview">
         <a href="#0">
            <img class="list-post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/45.jpg"
+                src="img/45.jpg"
                 alt="интерьер">
         </a>
       </div>
@@ -363,7 +363,7 @@
       <div class="list-post-preview">
         <a href="#0">
            <img class="list-post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/501.jpg"
+                src="img/501.jpg"
                 alt="накрытый стол">
         </a>
       </div>
@@ -378,7 +378,7 @@
       <div class="list-post-preview">
         <a href="#0">
            <img class="list-post-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/7.jpg"
+                src="img/7.jpg"
                 alt="длинные волосы">
         </a>
       </div>
@@ -476,9 +476,12 @@
       <div class="shop-item">
         <div class="shop-item-preview">
           <a href="#0">
-             <img class="post-img"
-                  src="img/shop-item-desk1.jpg"
-                  alt="растения в горшочках">
+            <picture class="post-img">
+              <source media="(min-width: 1201px)" srcset="img/shop-item-desk1.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet1.jpg">
+              <source media="(max-width: 640px)" srcset="img/shop-item-mobile1.jpg">
+              <img class="course__img" src="img/shop-item-desk1.jpg" alt="диванная подушка">
+            </picture>
           </a>
         </div>
         <div class="shop-item-info">
@@ -512,9 +515,12 @@
       <div class="shop-item">
         <div class="shop-item-preview">
           <a href="#0">
-             <img class="post-img"
-                  src="img/shop-item-desk2.jpg"
-                  alt="кукла зайчик">
+            <picture class="post-img">
+              <source media="(min-width: 1201px)" srcset="img/shop-item-desk2.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet2.jpg">
+              <source media="(max-width: 640px)" srcset="img/shop-item-mobile2.jpg">
+              <img class="course__img" src="img/shop-item-desk1.jpg" alt="кукла зайчик">
+            </picture>
           </a>
         </div>
         <div class="shop-item-info">
@@ -548,9 +554,12 @@
       <div class="shop-item">
         <div class="shop-item-preview">
           <a href="#0">
-             <img class="post-img"
-                  src="img/shop-item-desk3.jpg"
-                  alt="рамка для фото">
+            <picture class="post-img">
+              <source media="(min-width: 1201px)" srcset="img/shop-item-desk3.jpg">
+              <source media="(min-width: 641px) and (max-width: 1200px)" srcset="img/shop-item-tablet3.jpg">
+              <source media="(max-width: 640px)" srcset="img/shop-item-mobile3.jpg">
+              <img class="course__img" src="img/shop-item-desk1.jpg" alt="рамка для фото">
+            </picture>
           </a>
         </div>
         <div class="shop-item-info">
@@ -589,35 +598,35 @@
       <li class="social-item">
         <a href="#0" class="social-item-logo">
           <img class="social-item-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/social/004-twitter.svg"
+                src="svg/004-twitter.svg"
                 alt="twitter">
         </a>
       </li>
       <li class="social-item">
         <a href="#0" class="social-item-logo">
           <img class="social-item-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/social/001-pinterest.svg"
+                src="svg/001-pinterest.svg"
                 alt="pinterest">
         </a>
       </li>
       <li class="social-item">
         <a href="#0" class="social-item-logo">
           <img class="social-item-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/social/002-facebook-logo.svg"
+                src="svg/002-facebook-logo.svg"
                 alt="facebook">
         </a>
       </li>
       <li class="social-item">
         <a href="#0" class="social-item-logo">
           <img class="social-item-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/social/005-instagram.svg"
+                src="svg/005-instagram.svg"
                 alt="instagram">
         </a>
       </li>
       <li class="social-item">
         <a href="#0" class="social-item-logo">
           <img class="social-item-img"
-                src="https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg"
+                src="svg/003-tumblr.svg"
                 alt="tumblr">
         </a>
       </li>
