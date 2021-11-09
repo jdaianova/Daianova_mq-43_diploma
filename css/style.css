@@ -60,19 +60,11 @@
   justify-content: space-between;
 }
 
-.topic-title {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .menu {
   padding-top: 10px;
 }
 
 .menu-list {
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -97,15 +89,15 @@
 .topic-title {
   text-transform: uppercase;
   font-family: OpenSans-Bold;
-  padding-top: 100px;
   text-align: center;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .trend {
   max-width: 1660px;
   min-width: 1201px;
-  padding-top: 67px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -146,7 +138,7 @@
   position: absolute;
   left: 5%;
   bottom: 7%;
-  padding: 8%;
+  padding: 7.5%;
   z-index: 2;
 }
 
@@ -193,7 +185,7 @@ p {
 }
 
 .post-info {
-  width: 367px;
+  width: 100%;
 }
 
 .menu-location {
@@ -271,6 +263,7 @@ p {
 }
 
 .post-content {
+  width: 100%;
   margin-top: 35px;
   text-decoration: none;
 }
@@ -656,6 +649,7 @@ h3 {
     line-height: 75px;
     width: 700px;
     padding-bottom: 123px;
+    padding-top: 100px;
   }
 
   .trend {
@@ -707,8 +701,13 @@ h3 {
 /* -----------------TABLET------------------------ */
 @media (min-width: 641px) and (max-width: 1200px) {
   .topic {
-  background-image: url('../img/banner-bg-tablet.jpg');
-  padding-bottom: 125px;
+    background-image: url('../img/banner-bg-tablet.jpg');
+  }
+
+  .topic-container {
+    min-width: 641px;
+    max-width: 1200px;
+    padding: 50px 35px;
   }
 
   .topic-logo {
@@ -721,16 +720,40 @@ h3 {
 
   .topic-title {
     font-size: 40px;
-    line-height: 55px;
+    width: 620px;
+    padding-top: 85px;
+    padding-bottom: 65px;
   }
 
   .trend {
     min-width: 641px;
     max-width: 1200px;
+    margin-top: 50px;
+  }
+
+  .trend .info-title {
+    font-size: 18px;
+    font-family: OpenSans-Bold;
+  }
+
+  .trend-posts {
+    margin-top: 18px;
   }
 
   .trend-post {
     width: 49.5%;
+  }
+
+  .trend-post-preview {
+    height: 245px;
+  }
+
+  .post-img {
+    height: 100%;
+  }
+
+  .trend-post .post-title-text {
+    font-size: 17px;
   }
 
   .trend-post:nth-child(odd) {
@@ -743,15 +766,39 @@ h3 {
 
   .content {
     width: 697px;
+    margin: 40px auto;
+    padding: 8px 0;
+  }
+
+  .post:nth-child(n+2) {
+    margin-top: 42px;
   }
 
   .posts {
     width: 392px;
   }
 
+  .post-preview {
+    width: 392px;
+  }
+
   .post-info {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 0;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #eeeeee;
+  }
+
+  .post-title-text {
+    font-size: 17px;
+  }
+
+  .post-content {
+    margin-top: 15px;
+  }
+
+  .post-content p {
+    font-size: 15px;
   }
 
   .info {
@@ -763,6 +810,9 @@ h3 {
     width: 697px;
   }
 
+  .shop .info-title {
+    font-size: 18px;
+  }
 
   .shop-item {
     width: 337px;
@@ -770,6 +820,13 @@ h3 {
 
   .shop-item:nth-child(n+3) {
     margin-top: 27px;
+  }
+
+  .bottom-container {
+    min-width: 641px;
+    max-width: 1200px;
+    padding: 0 15px 0 15px;
+    margin-top: 64px;
   }
 
 }
