@@ -67,6 +67,15 @@
     margin-left: 122px;
   }
 
+  .shop {
+    width: 1200px;
+    padding: 0 15px;
+  }
+
+  .shop-item {
+    width: 345px;
+  }
+
 }
 
 @media (min-width: 641px) and (max-width: 1200px) {
@@ -114,6 +123,19 @@
   .info {
     width: 270px;
     margin-left: 35px;
+  }
+
+  .shop {
+    width: 697px;
+  }
+
+
+  .shop-item {
+    width: 337px;
+  }
+
+  .shop-item:nth-child(n+3) {
+    margin-top: 27px;
   }
 
 }
@@ -626,7 +648,6 @@ h3 {
 }
 
 .shop {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -639,14 +660,14 @@ h3 {
 }
 
 .shop-items {
-  width: 1170px;
+  width: 100%;
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .shop-item {
-  width: 345px;
   display: flex;
   flex-direction: column;
   align-items: center;
