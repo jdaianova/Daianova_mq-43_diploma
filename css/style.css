@@ -749,7 +749,7 @@ select {
 	width: 100%;
 	border: none;
 	background-color: #f4f7f6;
-	padding: 0 18px;
+	padding: 18px 18px;
 	font-family: OpenSans;
 	font-size: 13px;
 	margin-bottom: 8px;
